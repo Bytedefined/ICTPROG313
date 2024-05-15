@@ -1,3 +1,4 @@
+// Posion Spades
 const cards = ['diamond', 'spade', 'heart', 'club']
 const playerCards = document.querySelector('.userCard')
 const computerCards = document.querySelector('.compCard')

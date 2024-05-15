@@ -1,3 +1,4 @@
+// Number guessing
 let randomNumber = Math.floor(Math.random() * 100) + 1
 const guesses = document.querySelector('.guesses')
 const lastResult = document.querySelector('.lastResult')
@@ -51,7 +52,7 @@ function setGameOver() {
   const container = document.getElementById('resetButtonContainer')
   resetButton = document.createElement('button')
   resetButton.textContent = 'Start new game'
-  
+
   container.appendChild(resetButton)
   resetButton.addEventListener('click', resetGame)
 }
