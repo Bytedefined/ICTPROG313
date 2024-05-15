@@ -1,0 +1,193 @@
+/* || GENERAL SETUP || */
+
+html {
+    background-color: #334d66;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 80%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* || TYPOGRAPHY || */
+
+h1 {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1, h2 {
+  font-family: 'Krona One', sans-serif;
+  color: #334d66;
+}
+
+p, h3, h4, input, li, label, span {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+  text-shadow: 3px 3px 2.5px black;
+}
+
+h2 {
+  font-size: 3rem;
+  /* text-align: center; */
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p, li, label {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+/* || HEADER LAYOUT || */
+
+header {
+  margin-bottom: 10px;
+  background-color: #e68600;
+  padding: 1%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+
+
+/* || NAV BAR LAYOUT || */
+
+nav {
+  background-color: #e68600;
+  margin-bottom: 10px;
+  padding: 1%;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+
+/* || MAIN LAYOUT || */
+
+.front {
+  display: flex;
+}
+
+article {
+  background-color: #e68600;
+  padding: 1%;
+}
+
+.frontleft {
+  flex: 4;
+}
+
+aside {
+  background-color: #e68600;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+.frontright {
+  flex: 1;
+}
+
+.spotlight p {
+  font-size: 2.2rem;
+}
+
+.spotlight ul {
+  margin-left: 200px;
+}
+
+.spotlight li {
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.button-container {
+  display: inline-block;
+}
+
+.button-container button {
+  margin-right: 12px;
+}
+
+.game1 h2 {
+  margin-left: 55px;
+}
+
+.game2 h2 {
+  margin-left: 55px;
+}
+
+.game3 h2 {
+  margin-left: 55px;
+}
+
+.game3 p {
+  margin-left: 55px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.game2, .game3 {
+  margin-top: 10px;
+}
+
+#margin-left-55 {
+  margin-left: 55px;
+  margin-bottom: 45px;
+}
+
+#dealButton {
+  margin-left: 55px;
+  margin-right: 15px;
+  font-size: 20px;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+#resetButtonContainer2 button {
+  font-size: 20px;
+  padding: 15px 32px;
+  text-align: center;
+}
+
+.winBox p {
+  font-size: 2.2rem;
+  line-height: 2;
+  margin-left: 55px;
+}
+
+/* || FOOTER LAYOUT || */
+
+footer {
+  background-color: #e68600;
+  margin-top: 10px;
+  padding: 1%;
+}
