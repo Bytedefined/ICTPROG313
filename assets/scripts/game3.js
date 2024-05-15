@@ -1,45 +1,45 @@
-const cards = ['diamond', 'spade', 'heart', 'club'];
-const playerCards = document.querySelector('.userCard');
-const computerCards = document.querySelector('.compCard');
+const cards = ['diamond', 'spade', 'heart', 'club']
+const playerCards = document.querySelector('.userCard')
+const computerCards = document.querySelector('.compCard')
 
 function play () {
-  let dealtCards = [];
-  let currentCard;
+  let dealtCards = []
+  let currentCard
 
   while(currentCard !== "spade") {
-    currentCard = cards[Math.floor(Math.random() * 4)];
-    dealtCards.push(currentCard);
+    currentCard = cards[Math.floor(Math.random() * 4)]
+    dealtCards.push(currentCard)
   }
 
-  dealtCards.push("Winner", "Loser");
+  dealtCards.push("Winner", "Loser")
 
   for(let i = 0; i < dealtCards.length; i++) {
     if (i%2 === 0) {
-      playerCards.textContent += dealtCards[i] + ' ';
+      playerCards.textContent += dealtCards[i] + ' '
     } else {
-      computerCards.textContent += dealtCards[i] + ' ';
+      computerCards.textContent += dealtCards[i] + ' '
     }
   }
 
-  endGame();
+  endGame()
 }
 
 function endGame() {
   dealButton.disabled = true
-  const container = document.getElementById("resetButtonContainer2");
-  resetButton = document.createElement("button");
-  resetButton.textContent = "Reset Game";
+  const container = document.getElementById("resetButtonContainer2")
+  resetButton = document.createElement("button")
+  resetButton.textContent = "Reset Game"
 
-  container.appendChild(resetButton);
-  resetButton.addEventListener("click", restartGame);
+  container.appendChild(resetButton)
+  resetButton.addEventListener("click", restartGame)
 }
 
 function restartGame() {
-  playerCards.textContent = '';
-  computerCards.textContent = '';
+  playerCards.textContent = ''
+  computerCards.textContent = ''
 
-  resetButton.parentNode.removeChild(resetButton);
-  dealButton.disabled = false;
+  resetButton.parentNode.removeChild(resetButton)
+  dealButton.disabled = false
 }
 
-document.getElementById("dealButton").addEventListener('click', play);
+document.getElementById("dealButton").addEventListener('click', play)
