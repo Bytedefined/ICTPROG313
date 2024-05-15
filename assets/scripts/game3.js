@@ -26,8 +26,8 @@ function play () {
 }
 
 function endGame() {
-  dealButton.disabled = true
   const container = document.getElementById("resetButtonContainer2")
+  dealButton.disabled = true
   resetButton = document.createElement("button")
   resetButton.textContent = "Reset Game"
 
@@ -38,7 +38,6 @@ function endGame() {
 function restartGame() {
   playerCards.textContent = ''
   computerCards.textContent = ''
-
   resetButton.parentNode.removeChild(resetButton)
   dealButton.disabled = false
 }
