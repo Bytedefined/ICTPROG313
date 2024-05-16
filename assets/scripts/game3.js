@@ -3,6 +3,15 @@ const cards = ['diamond', 'spade', 'heart', 'club']
 const playerCards = document.querySelector('.userCard')
 const computerCards = document.querySelector('.compCard')
 
+function endGame() {
+  const container = document.getElementById("resetButtonContainer2")
+  dealButton.disabled = true
+  resetButton = document.createElement("button")
+  resetButton.textContent = "Reset Game"
+  container.appendChild(resetButton)
+  resetButton.addEventListener("click", restartGame)
+}
+
 function play () {
   let dealtCards = []
   let currentCard
@@ -23,16 +32,6 @@ function play () {
   }
 
   endGame()
-}
-
-function endGame() {
-  const container = document.getElementById("resetButtonContainer2")
-  dealButton.disabled = true
-  resetButton = document.createElement("button")
-  resetButton.textContent = "Reset Game"
-
-  container.appendChild(resetButton)
-  resetButton.addEventListener("click", restartGame)
 }
 
 function restartGame() {

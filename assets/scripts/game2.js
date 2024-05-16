@@ -12,21 +12,21 @@ document.getElementById("scissors").addEventListener("click", userSelectedScisso
 function compare(choiceOne, choiceTwo) {
     // Note: choiceOne = user; choiceTwo = computer
     if (choiceOne === choiceTwo) {
-        document.getElementById("overallResult").innerHTML = "It's a tie!"
+        document.getElementById("overallResult").innerHTML("It's a tie!")
     } else if(choiceOne === "rock" && choiceTwo === "scissors") {
-        document.getElementById("overallResult").innerHTML = "Rock beat scissors - you win!"
+        document.getElementById("overallResult").innerHTML("Rock beat scissors - you win!")
     } else if(choiceOne === "scissors" && choiceTwo === "rock") {
-        document.getElementById("overallResult").innerHTML = "Rock beat scissors - you lose!"
+        document.getElementById("overallResult").innerHTML("Rock beat scissors - you lose!")
     } else if(choiceOne === "rock" && choiceTwo === "paper") {
-        document.getElementById("overallResult").innerHTML = "Paper beat rock - you lose!"
+        document.getElementById("overallResult").innerHTML("Paper beat rock - you lose!")
     } else if(choiceOne === "paper" && choiceTwo === "rock") {
-        document.getElementById("overallResult").innerHTML = "Paper beat rock - you win!"
+        document.getElementById("overallResult").innerHTML("Paper beat rock - you win!")
     } else if(choiceOne === "scissors" && choiceTwo === "paper") {
-        document.getElementById("overallResult").innerHTML = "Scissors beat paper - you win!"
+        document.getElementById("overallResult").innerHTML("Scissors beat paper - you win!")
     } else if(choiceOne === "paper" && choiceTwo === "scissors") {
-        document.getElementById("overallResult").innerHTML = "Scissors beat paper - you lose!"
+        document.getElementById("overallResult").innerHTML("Scissors beat paper - you lose!")
     } else {
-        document.getElementById("overallResult").innerHTML = "Something went wrong - invalid values."
+        document.getElementById("overallResult").innerHTML("Something went wrong - invalid values.")
     }
 }
 
