@@ -66,7 +66,7 @@ function userSelectedPaper() {
     computerRoll()
 }
 
-function userSelectedRock() {
+function userSelectedScissors() {
     document.getElementById("userPick").innerHTML = "You selected: Scissors"
     userChoice = "scissors"
 
